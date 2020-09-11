@@ -25,7 +25,7 @@ class HomeController extends Controller {
     const targetPath = path.join(this.config.baseDir, 'app/public', filename);
     const dirname = path.dirname(targetPath);
     this.logger.info({ dirname });
-    this.mkdirsSync(dirname);
+    await this.mkdirsSync(dirname);
     const source = fs.createReadStream(file.filepath);
     const target = fs.createWriteStream(targetPath);
 
