@@ -2,6 +2,8 @@
 
 a simple oss server
 
+当前进度:简单支持OSS签名上传,还未做签名检验
+
 ## QuickStart
 
 <!-- add docs here for user -->
