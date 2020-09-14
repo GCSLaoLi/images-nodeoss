@@ -2,7 +2,7 @@
 
 a simple oss server
 
-当前进度:简单支持 OSS 签名上传,还未做签名检验
+当前进度:简单支持 OSS 签名上传,还未做签名检验,持续开发中.
 
 感谢 `cool团队` 赠送的[cool-admin-pro](https://www.cool-admin.com/coolAdmin)
 
