@@ -21,7 +21,7 @@ class HomeController extends Controller {
     let filename = '/未指定.txt';
     if (!file) return ctx.throw(400, '未上传文件!');
     if (!ctx.request.body.key) {
-      filename = moment().format('YYYYMMDD') + '/' + uuid() + +path.extname(file.filename).toLowerCase();
+      filename = moment().format('YYYYMMDD') + '/' + uuid.v1() + path.extname(file.filename).toLowerCase();
     } else { filename = ctx.request.body.key; }
 
 
