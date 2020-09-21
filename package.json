@@ -10,8 +10,10 @@
     "egg": "^2.15.1",
     "egg-cors": "^2.2.3",
     "egg-scripts": "^2.11.0",
+    "moment": "^2.28.0",
     "mz": "^2.7.0",
-    "mz-modules": "^2.1.0"
+    "mz-modules": "^2.1.0",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
