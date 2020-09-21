@@ -18,7 +18,7 @@ class HomeController extends Controller {
     this.logger.info('upload被调用了');
     this.logger.info(ctx.request.body);
     const file = ctx.request.files[0];
-    let filename = '/未指定.txt';
+    let filename = '未指定.txt';
     if (!file) return ctx.throw(400, '未上传文件!');
     if (!ctx.request.body.key) {
       filename = moment().format('YYYYMMDD') + '/' + uuid.v1() + path.extname(file.filename).toLowerCase();
