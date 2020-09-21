@@ -39,7 +39,7 @@ class HomeController extends Controller {
       // delete those request tmp files
       await ctx.cleanupRequestFiles();
     }
-    ctx.body = { code: 1000, url: process.env.WEB_ROOT || 'https://oss.dev.lidong.xin/' + filename };
+    ctx.body = { code: 1000, url: (process.env.WEB_ROOT || 'https://oss.dev.lidong.xin/') + filename };
   }
   async mkdirsSync(dirname) {
     if (fs.existsSync(dirname)) {
