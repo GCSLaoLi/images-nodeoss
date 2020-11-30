@@ -29,12 +29,12 @@ module.exports = appInfo => {
     }
   };
   config.cors = {
-    origin: '*',
+    origin: process.env.CORS,
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,INFO'
   };
   // 靜態目錄及緩存設置
   config.static = {
-    prefix: process.env.CORS,
+    prefix: '/',
     dir: path.join(appInfo.baseDir, 'app/public'),
     dynamic: true,
     preload: false,
