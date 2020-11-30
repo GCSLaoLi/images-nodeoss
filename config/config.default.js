@@ -34,7 +34,7 @@ module.exports = appInfo => {
   };
   // 靜態目錄及緩存設置
   config.static = {
-    prefix: '/',
+    prefix: process.env.CORS,
     dir: path.join(appInfo.baseDir, 'app/public'),
     dynamic: true,
     preload: false,
