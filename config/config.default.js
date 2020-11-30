@@ -31,7 +31,8 @@ module.exports = appInfo => {
   };
   config.cors = {
     origin: process.env.CORS,
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,INFO'
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,INFO',
+    credentials: true
   };
   // 靜態目錄及緩存設置
   config.static = {
